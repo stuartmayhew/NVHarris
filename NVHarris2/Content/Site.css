@@ -1,0 +1,135 @@
+﻿body {
+
+}
+#mydiv {
+    background-image: url('/Images/banner.jpg');
+    background-repeat: no-repeat;
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 20vmin;
+    background-size: 100%;
+    /* Set padding to keep content from hitting the edges */
+}
+.publicSite {
+    background: linear-gradient(#4c774d,#cfc1a8);
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select {
+    max-width: 350px;
+}
+
+h1 {
+    font-size: 5vw;
+    text-shadow: 4px 4px black;
+    color: #4c774d;
+    font-family: 'Perforama';
+}
+
+h2, h3, h4 {
+    font-size: 2vw;
+}
+
+h5 {
+    font-size: 1.6vw;
+}
+
+h6 {
+    font-size: 1.2vw;
+}
+
+.catPicResponsivesmall {
+    width: 4vw !important;
+    height: auto;
+}
+
+.catPicResponsive {
+    width: 15vw;
+    height: auto;
+}
+
+.bannerLogo {
+    width: 20vw;
+    height: auto;
+}
+
+.bulletPicResponsive {
+    width: 3vw;
+    height: auto;
+    padding-right: 1%;
+}
+
+.gallerybox {
+    /*background: #cfc1a8;*/
+    border: #ff0000;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    color: black;
+}
+
+.catCard {
+    background: #ffffff;
+    border-style: solid;
+    border-width: thick;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    padding: 10px 30px 10px 30px;
+    color: #ff0000;
+}
+
+
+#mydiv {
+    /*background-image: url('/Images/banner.jpg');
+    background-repeat: repeat;*/
+    /*background-color: #cfc1a8;*/
+    background-color: white;
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 15%;
+    /*background-size: 100%;*/
+}
+
+ul {
+    list-style: none;
+    margin-left: 12em;
+    padding-left: 1em;
+    text-indent: -1em;
+}
+
+.nav-item {
+    font-size:x-large;
+}
+
+    .nav-item a:hover {
+        color: white !important;
+        cursor: pointer;
+    }
+
+@font-face {
+    font-family: 'Perforama';
+    src: url('Perforama.woff') format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    url('Perforama.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
+

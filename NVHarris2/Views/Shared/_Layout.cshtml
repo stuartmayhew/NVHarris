@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title Website Demo</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <div id="mydiv">
+        <div class="row">
+            <div class="col-md-12 bannerClass">
+                <img src="~/Images/banner.jpg" class="bannerLogo" />
+                <h2 style="color:black">IT Business Solutions</h2>
+                <h2 style="color:black">(251)454-3514</h2>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-primary navbar-dark">
+        <div class="container">
+            <nav class="navbar navbar-dark navbar-expand-md bg-primary navbar-dark">
+                <a class="navbar-brand" style="font-family:'Arno Pro Caption'" href="#">Cart Demo</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar1">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar1">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active px-5">@Html.ActionLink("Home", "Index", "Home", null, new { @class = "nav-link" })</li>
+                        <li class="nav-item active px-5">@Html.ActionLink("About", "About", "Home", null, new { @class = "nav-link" })</li>
+                        <li class="nav-item active px-5">@Html.ActionLink("Contact", "Contact", "Home", null, new { @class = "nav-link" })</li>
+                        @*@if (currCart != null)
+                        {
+                            <li class="nav-item active offset-3"><a href="@Url.Action("ShowCart","Cart",new { cartID = currCart.CartID })" target="_blank"><img src='~/Images/Cart.png' height='40' width='40' /></a></li>
+                            <li class="nav-item active offset-1">Items:@cartItemCount</li>
+
+                        }*@
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - Website Guys</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
