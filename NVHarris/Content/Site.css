@@ -1,0 +1,125 @@
+﻿body {
+    background: linear-gradient(#b8c8ef,#003479);
+}
+
+.bannerLogo {
+    width: 20vw;
+    height: auto;
+}
+
+.bannerClass {
+    text-align: center;
+    background-color: white;
+    padding-bottom: .5vmin;
+    padding-top: 2vmin;
+    font-family:'Century Schoolbook';
+}
+.publicSite {
+    background: linear-gradient(#4c774d,#cfc1a8);
+}
+
+h1.bannerClass {
+    font-size: 5vmin;
+    text-shadow: 4px 4px black;
+    color: #4c774d;
+}
+
+h1 {
+    font-size: 5vmin;
+}
+
+h2 {
+    font-size: 4vmin;
+}
+
+h3 {
+    font-size: 3.5vmin;
+}
+
+h4 {
+    font-size: 3vmin;
+}
+
+h5 {
+    font-size: 2.5vmin;
+}
+
+h6 {
+    font-size: 2vmin;
+}
+
+.catPicResponsivesmall {
+    width: 4vw !important;
+    height: auto;
+}
+
+.catPicResponsive {
+    width: 15vw;
+    height: auto;
+}
+
+.portPicResponsive {
+    width: 40vmin;
+    height: auto;
+}
+
+.bulletPicResponsive {
+    width: 3vw;
+    height: auto;
+    padding-right: 1%;
+}
+
+.gallerybox {
+    border: #ff0000;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 3%;
+    color: navy;
+}
+
+.contactForm{
+    font-size:2vmin;
+    color:white;
+}
+
+.catCard {
+    background: #ffffff;
+    border-style: solid;
+    border-width: thick;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    padding: 10px 30px 10px 30px;
+    color: navy;
+}
+
+
+ul {
+    list-style: none;
+    margin-left: 12em;
+    padding-left: 1em;
+    text-indent: -1em;
+}
+
+.ulcatCard {
+    list-style: none;
+    margin-left: .5em;
+    padding-left: 1em;
+    text-indent: -1em;
+}
+
+.nav-item {
+    font-size: 3vmin;
+    /*font-family: 'Century Schoolbook';*/
+}
+
+    .nav-item a:hover {
+        color: white !important;
+        cursor: pointer;
+    }
+
+.about{
+    font-size:2.5vmin;
+}
+
