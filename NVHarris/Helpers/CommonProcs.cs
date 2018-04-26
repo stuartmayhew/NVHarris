@@ -18,7 +18,7 @@ namespace NVHarris.Helpers
     public static class CommonProcs
     {
         //public static string WCompanyConnStr = "Data Source=52.41.99.172;Initial Catalog=NVHarris;Persist Security Info=True;User ID=sa;Password=Sh@dow111";
-        public static string WCompanyConnStr = ConfigurationManager.ConnectionStrings["NVHarrisDev"].ConnectionString;
+        public static string WCompanyConnStr = ConfigurationManager.ConnectionStrings["NVHarris"].ConnectionString;
         public static string FormatCurrency(decimal amount)
         {
             return string.Format("{0:c}", amount);

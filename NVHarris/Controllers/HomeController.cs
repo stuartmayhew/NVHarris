@@ -24,9 +24,20 @@ namespace NVHarris.Controllers
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
+            Contact contact = new Contact();
+            contact.ContactDate = DateTime.Now;
+            return View("Contact",contact);
+        }
 
-            return View();
+        public ActionResult SaveContact(Contact contact)
+        {
+            contact.ContactID = new ModelToSQL<Contact>().WriteInsertSQL("Contact", contact, "ContactID");
+            MailHelper mh = new MailHelper();
+            if (mh.SendContactEmail(contact))
+                ViewBag.SentMessage = "Your Message has been sent and we have emailed you a copy";
+            else
+                ViewBag.SentMessage = "Sending failed. Please contact us at 251-454-3514";
+            return View("Contact", contact);
         }
 
         public ActionResult Portfolio()

@@ -22,20 +22,16 @@ namespace NVHarris
         // STARTTLS to encrypt the connection.
         const int PORT = 587;
 
-        const String SMTP_USERNAME = "AKIAJW77CBQ6CSW4IYXQ";  // Replace with your SMTP username. 
-        const String SMTP_PASSWORD = "Ao5aikg7Of6Kkspq+vNkhJr5LO6cnBRSxRHoQV2d2Lxf";  // Replace with your SMTP password.
-
         private SmtpClient client = new SmtpClient(HOST, PORT);
 
 
         public bool SendContactEmail(Contact contact)
         {
-            //string toAddress = "japarker@gulftel.com";
-            string toAddress = "stumay111@gmail.com";
+            string toAddress = "vince@nvharris.com";
             string BCCAddress = "stumay111@gmail.com";
             client.Credentials = GetCredentials();
             client.EnableSsl = true;
-            MailMessage mail = new MailMessage("noreply@westbaypeanuts.com", toAddress);
+            MailMessage mail = new MailMessage("noreply@nvharris.com", toAddress);
             mail.CC.Add(new MailAddress(contact.Email));
             mail.Bcc.Add(new MailAddress(BCCAddress));
             mail.Subject = "Contact from Website";
@@ -77,9 +73,9 @@ namespace NVHarris
 
         public string BuildContactBody(Contact contact)
         {
-            string fileURL = "http://www.westbaypeanuts.com/images/EmailBanner.jpg";
+            string fileURL = "http://nvharris.com/images/EmailBanner.jpg";
             string htmlBody = String.Format(@"<img src=""{0}"" />", fileURL);
-            htmlBody += "<br/><h1>Thank you for contacting West Bay Peanuts<h1/>";
+            htmlBody += "<br/><h1>Thank you for contacting NVHarris and Associates<h1/>";
             htmlBody += "<br/>";
             htmlBody += "<h4>" + contact.ContactName + " requested information:<h4/>";
             htmlBody += "<pre><span style='font-family:Arial;font-size: 12pt;'>";
